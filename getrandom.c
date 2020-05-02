@@ -9,7 +9,7 @@
 int main(){
 
    // open device file
-   int file = open("/dev/RandomMachine", 0);
+   int file = open("/dev/RandomDevice", 0);
    if (file < 0){
       printf("Can not open device file");
       return -1;
