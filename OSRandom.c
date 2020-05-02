@@ -53,6 +53,8 @@ static ssize_t random_read(struct file *filp, char *buffer, size_t length, loff_
     // we convert char to int and pass each digit to number array
     char digit[10]; 
     int i = 0;
+
+    if (randomNumber == 0) digit[i++] = '0';
     while (randomNumber != 0) {
 	char value = randomNumber % 10 + '0';
     	randomNumber = randomNumber/10;
