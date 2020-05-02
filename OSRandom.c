@@ -54,7 +54,7 @@ static ssize_t random_read(struct file *filp, char *buffer, size_t length, loff_
     char digit[10]; 
     int i = 0;
 
-    if (randomNumber == 0) digit[i++] = '0';
+    if (randomNumber == 0) digit[i++] = '0'; //add 0 digit
     while (randomNumber != 0) {
 	char value = randomNumber % 10 + '0';
     	randomNumber = randomNumber/10;
