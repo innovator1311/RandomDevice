@@ -7,7 +7,7 @@
 #include <linux/uaccess.h>     
 
 //module infomation
-MODULE_LICENSE("APCS_1751087_1751108");
+MODULE_LICENSE("APCS_1751087_1751109");
 MODULE_AUTHOR("Nguyen Minh Tri - Do Tri Nhan");
 MODULE_DESCRIPTION("Module device kernel to random number, user can access through device file /dev/RandomDevice");
 MODULE_VERSION("3.0.1");
